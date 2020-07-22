@@ -1,0 +1,9 @@
+﻿.cursor-pointer {
+    cursor: pointer;
+}
+
+.store-map {
+    width: 350px;
+    height: 500px;
+    flex-shrink: 0;
+}

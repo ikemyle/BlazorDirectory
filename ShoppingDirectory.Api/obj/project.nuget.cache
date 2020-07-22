@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "W2GXB+u7AdZC5qyb5pu/IeorB0LhulpeHd8y6KBTdx7rnSmmCjbbeX32dJIgWU3KmuXyr1eCdXTeeOxpv7g5vw==",
+  "success": true,
+  "projectFilePath": "C:\\BlazorApp\\ShoppingDirectory.Api\\ShoppingDirectory.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\microsoft.extensions.configuration.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.6\\microsoft.extensions.configuration.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.6\\microsoft.extensions.configuration.binder.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.6\\microsoft.extensions.dependencyinjection.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6\\microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.http\\3.1.6\\microsoft.extensions.http.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging\\3.1.6\\microsoft.extensions.logging.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6\\microsoft.extensions.logging.abstractions.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\microsoft.extensions.options.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\microsoft.extensions.primitives.3.1.6.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

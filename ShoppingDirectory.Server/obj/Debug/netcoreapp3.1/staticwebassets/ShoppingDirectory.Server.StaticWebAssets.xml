@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/ShoppingDirectory" Path="C:\BlazorApp\ShoppingDirectory\wwwroot\" />
+  <ContentRoot BasePath="_content/ShoppingDirectory.Libraries" Path="C:\BlazorApp\ShoppingDirectory.Libraries\wwwroot\" />
+</StaticWebAssets>

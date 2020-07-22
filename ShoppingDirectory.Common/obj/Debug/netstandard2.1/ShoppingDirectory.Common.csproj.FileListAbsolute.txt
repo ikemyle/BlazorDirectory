@@ -1,0 +1,8 @@
+C:\BlazorApp\ShoppingDirectory.Common\bin\Debug\netstandard2.1\ShoppingDirectory.Common.deps.json
+C:\BlazorApp\ShoppingDirectory.Common\bin\Debug\netstandard2.1\ShoppingDirectory.Common.dll
+C:\BlazorApp\ShoppingDirectory.Common\bin\Debug\netstandard2.1\ShoppingDirectory.Common.pdb
+C:\BlazorApp\ShoppingDirectory.Common\obj\Debug\netstandard2.1\ShoppingDirectory.Common.AssemblyInfoInputs.cache
+C:\BlazorApp\ShoppingDirectory.Common\obj\Debug\netstandard2.1\ShoppingDirectory.Common.AssemblyInfo.cs
+C:\BlazorApp\ShoppingDirectory.Common\obj\Debug\netstandard2.1\ShoppingDirectory.Common.csproj.CoreCompileInputs.cache
+C:\BlazorApp\ShoppingDirectory.Common\obj\Debug\netstandard2.1\ShoppingDirectory.Common.dll
+C:\BlazorApp\ShoppingDirectory.Common\obj\Debug\netstandard2.1\ShoppingDirectory.Common.pdb
