@@ -1,0 +1,54 @@
+﻿@inherits StoreDialogBase
+
+@if (ShowDialog)
+{
+    <div class="modal fade show d-block" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleLabel">@Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <EditForm Model="@Store" OnValidSubmit="@HandleValidSubmit" OnInvalidSubmit="@HandleInvalidSubmit">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+                        <div class="form-group">
+                            <label for="storeName"></label>
+                            <InputText id="storeName" @bind-Value="@Store.Name" class="form-control" placeholder="Enter store name" />
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Store.Name)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="storeAddress"></label>
+                            <InputText id="storeAddress" @bind-Value="@Store.Address" class="form-control" placeholder="Enter store address" />
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Store.Address)" />
+                        </div>
+                        <div class="form-group">
+                            <label for="storeCity"></label>
+                            <InputText id="storeCity" @bind-Value="@Store.City" class="form-control" placeholder="Enter store city" />
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Store.City)" />
+                        </div>
+
+                        <div calss="form-group">
+                            <label for="storeCategory">Sector</label>
+                            <InputSelect id="storeCategory" class="form-control col-sm-8" @bind-Value="@Store.CategoryId">
+                                @foreach (var storeCategory in StoreCategories)
+                                    {
+                                    <option value="@storeCategory.Id">@storeCategory.Name</option>
+                                    }
+                            </InputSelect>
+                            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => Store.CategoryId)" />
+                        </div>
+                        <hr />
+                        <div class="col-lg-5 form-group float-lg-right">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a @onclick="@Close" class="btn btn-warning">Cancel</a>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+}

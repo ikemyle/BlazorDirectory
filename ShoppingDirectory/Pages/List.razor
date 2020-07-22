@@ -1,0 +1,73 @@
+﻿@page "/stores"
+@page "/stores/category/{CategoryId}"
+@inherits ListBase
+
+<a name="top"></a>
+<h1 class="page-title">Store List</h1>
+@if (ShowAlert)
+{
+    <div class="alert @StatusClass alert-dismissible fade show" role="alert">
+        @Message
+        <a @onclick="@CloseAlert" type="button" class="close">
+            <span>&times;</span>
+        </a>
+    </div>
+}
+
+@if (Categories != null)
+{
+    <div class="row">
+        <div class="col-md-9">
+            <a href="stores" class="badge badge-primary">All Categories</a>
+            @foreach (var ctg in Categories)
+            {
+                <a href="@($"stores/category/{ctg.Id}")" class="badge badge-info">@ctg.Name</a>
+            }
+        </div>
+        <div class="col-md-3">
+            <button @onclick="@StoreAdd" class="btn btn-primary table-btn float-right"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;Add Store</button>
+        </div>
+    </div>
+}
+<hr />
+@if (Stores == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach (var store in Stores)
+    {
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h3>@store.Name</h3>
+                        <span>@store.Address</span>,&nbsp;
+                        <span>@store.City</span>
+                    </div>
+                    <div class="col-md-3">
+                        <a href=@($"stores/category/{store.CategoryId}") class="badge badge-secondary float-right">@store.CategoryName</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href=@($"storedetail/{store.Id}") class="btn btn-lg">
+                    <i class="fa fa-info"></i>
+                    Info
+                </a>
+                <button @onclick="@(e =>EditStore(store))" class="btn btn-lg">
+                    <i class="fa fa-edit"></i>
+                    Edit
+                </button>
+                <a @onclick="@(e =>DeleteStore(store))" class="btn btn-lg cursor-pointer">
+                    <i class="fa fa-trash"></i>
+                    Delete
+                </a>
+            </div>
+        </div>
+    }
+}
+<Toast></Toast>
+<StoreDialog @ref="StoreDialog" Store="@SelectedStore" CloseEventCallback="@AddStoreDialog_OnDialogClose"></StoreDialog>
+<ConfirmDialog @ref="ConfirmDialog" Title="Confirm delete store" Message=@(SelectedStore==null ? "":$"Do you want to remove ''{SelectedStore.Name}''?") CloseEventCallback="@ConfirmDialog_OnDialogClose"></ConfirmDialog>

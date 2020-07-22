@@ -1,0 +1,40 @@
+﻿@page "/storedetail/{StoreId}"
+@inherits StoreDetailBase
+
+@if (Store == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="col-12 row">
+        <div class="col-xs-12 col-sm-8">
+            <h1 class="page-title">Details for @Store.Name</h1>
+
+            <div class="form-group">
+                <label for="storeName"></label>
+                <label id="storeName" class="form-control" placeholder="Enter store name">@Store.Name</label>
+            </div>
+            <div class="form-group">
+                <label for="storeAddress"></label>
+                <label id="storeAddress" class="form-control">@Store.Address</label>
+            </div>
+            <div class="form-group">
+                <label for="storeCity"></label>
+                <label id="storeCity" class="form-control">@Store.City</label>
+            </div>
+
+            <div calss="form-group">
+                <label>Sector</label>
+                <label id="storeCategory" class="form-control">@Store.CategoryName</label>
+            </div>
+            <hr />
+            <a href="./Stores" class="btn btn-success">Back to List</a>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="store-map">
+                <Map Zoom="10" Markers="MapMarkers"></Map>
+            </div>
+        </div>
+    </div>
+}
