@@ -21,3 +21,5 @@ Functionalities
 ![Shopping Directory home](https://github.com/ikemyle/BlazorDirectory/blob/master/DirectoryHome.png?raw=true)
 ![Shopping Directory list](https://github.com/ikemyle/BlazorDirectory/blob/master/DirectoryList.png?raw=true)
 ![Shopping Directory edit](https://github.com/ikemyle/BlazorDirectory/blob/master/DirectoryEdit.png?raw=true)
+![Shopping Directory detail](https://github.com/ikemyle/BlazorDirectory/blob/master/DirectoryDetails.png?raw=true)
+![Shopping Directory update confirm](https://github.com/ikemyle/BlazorDirectory/blob/master/UpdateToast.png?raw=true)
