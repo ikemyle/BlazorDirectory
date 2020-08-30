@@ -1,4 +1,4 @@
-This repository is a great start for building blazor applications for server as well as thye cliebt side.
+This repository is a great start for building blazor applications for server as well as the cliebt side.
 
 Requirements
 https://docs.microsoft.com/en-us/dotnet/standard/net-standard
